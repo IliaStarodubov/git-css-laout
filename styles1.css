@@ -7,8 +7,6 @@ body {
     text-align: center;
 }
 
-
-
 #menu__toggle {            /* скрыть бургер на full-screen*/
     visibility: hidden;
 }
