@@ -4,129 +4,134 @@
     <meta name="viewport" content="width=device-width" />
     <meta charset="UTF-8">
     <title>verstka</title>
-    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
     <body>
-        <header class="main-header">
-         
-            <div class="hamburger-menu">
-                <input id="menu__toggle" type="checkbox" />
-                <label class="menu__btn" for="menu__toggle">
-                  <span></span>
-                </label>
+        <div class="conteiner">
+            <header class="main-header">        
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                    </label>
 
-                <div class="menu">                   
-                    <h3>Home</h3>
-                    <h3><a href="#about">About me</a></h3>
-                    <h3><a href="#skills">Skills</a></h3>
-                    <h3><a href="#portfolio">Portfolio</a></h3>
-                    <h3><a href="#contacts">Contacts</a></h3>
+                    <div class="menu">                   
+                        <h3>Home</h3>
+                        <h3><a href="#about">About me</a></h3>
+                        <h3><a href="#skills">Skills</a></h3>
+                        <h3><a href="#portfolio">Portfolio</a></h3>
+                        <h3><a href="#contacts">Contacts</a></h3>
+                    </div>
                 </div>
-            </div>
-            <div class="line"></div>
-        </header>
-    
-        <main>
-            <a name="home"></a>
-            <div class="main-text">
-                <h1>Denis<br>Novikov</h1>
-                <p>UX | UI desiger<br>24 years old, Minsk</p>
-                <p>RU | ENG</p>
-            </div>
-            <img src="mobile.png" alt="photo" class="mini-photo">
-                
-            <div class="ava">
-                <img src="BSPP2266.jpg" alt="мое фото" class="avatar">
-            </div>
-
-            <a name="about"></a>
-            <div class="about">
-                <h2>About me</h2>
-                <p>Hi, I'm Denis – UX/UI designer from Minsk.
-                    <br> 
-                    I'm interested in design and everything connected with it.
-                </p>
-                <p>
-                    I'm studying at courses "Web and mobile design 
-                    <br>
-                    interfaces" in IT-Academy.
-                </p>
-                <p>
-                    Ready to implement excellent projects
-                    <br>
-                    with wonderful people.
-                </p>
-            </div>
-
-            <a name="skills"></a>
-            <div class="skills">
-                <h2>Skills</h2>
-                <p>I work in such programs as</p>
-                
-                <div class="class">
-                    <div class="ps">
-                        <img src="PS.png" alt="ps">
-                        <p>Adobe <br> Photoshop</p>
-                        <h1>★★★★☆</h1>
-                    </div>
-
-                    <div class="ai">
-                        <img src="AI.png" alt="al">
-                        <p>Adobe <br> Illustrator</p>
-                        <h1>★★★☆☆</h1>
-                    </div>
-
-                    <div class="xd">
-                        <img src="XD.png" alt="xd">
-                        <p>Adobe<br>Experience Design</p>
-                        <h1>★★★★☆</h1>
-                    </div>
-    
-                    <div class="figma">
-                        <img src="Figma.png" alt="figma">
-                        <p> <br> Figma</p>
-                        <h1>★★★★☆</h1>
-                    </div>  
-                </div>
-            </div>
-
-            <a name="portfolio"><br></a>
-            <div class="portfolio">
-                <h2>Portfolio</h2>
-                <img src="img1.png" alt="website">
-                <br>
-                <a href="">Online fashion store - Homepage</a>
-                <br>
-                <img src="reebok_web.png" alt="reebok_web">
-                <br>
-                <a href="">Reebok Store - Concept</a>
-                <br>
-                <img src="cam.png" alt="cam">
-                <br>
-                <a href="">Braun Landing Page - Concept</a>
-            </div>
+                <div class="line"></div>
+            </header>
+        
             
-        </main>
+                <a name="home"></a>
+                <div class="main-text">
+                    <div class="main-text__name squere">Denis<br>Novik</div>
+                    <div class="main-text__text squere">UX | UI desiger<br>24 years old, Minsk</div>
+                    <div class="main-text__lange squere">RU | ENG</div>
+                </div>
+                <img src="assets/mobile.png" alt="photo" class="mini-photo">
+                    
+                <div class="ava">
+                    <img src="assets/main-photo.jpg" alt="мое фото" class="avatar">
+                </div>
+        </div> 
+                <a name="about"></a>
+                <div class="about">
+                    <h2>About me</h2>
+                    <p>Hi, I'm Denis – UX/UI designer from Minsk.
+                        <!-- <br>  -->
+                        I'm interested in design and everything connected with it.
+                    </p>
+                    <p>
+                        I'm studying at courses "Web and mobile design 
+                        <!-- <br> -->
+                        interfaces" in IT-Academy.
+                    </p>
+                    <p>
+                        Ready to implement excellent projects
+                        <!-- <br> -->
+                        with wonderful people.
+                    </p>
+                </div>
+            <div class="conteiner">
+                <a name="skills"></a>
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <p>I work in such programs as</p>
+                    
+                    <div class="skills-list">
+                        <div>
+                            <img src="assets/PS.png" alt="ps">
+                            <p>Adobe Photoshop</p>
+                            <h1>★★★★☆</h1>
+                        </div>
 
-        <footer>
+                        <div class="skills-item">
+                            <img src="assets/AI.png" alt="al">
+                            <p>Adobe Illustrator</p>
+                            <h1>★★★☆☆</h1>
+                        </div>
+
+                        <div class="skills-item">
+                            <img src="assets/XD.png" alt="xd">
+                            <p>Adobe Experience Design</p>
+                            <h1>★★★★☆</h1>
+                        </div>
+        
+                        <div class="skills-item">
+                            <img src="assets/Figma.png" alt="figma">
+                            <p>Figma</p>
+                            <h1>★★★★☆</h1>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+                <a name="portfolio"></a>
+                <div class="portfolio">
+                    <h2>Portfolio</h2>
+                    <img src="assets/clothes.png" alt="website">
+                    <br>
+                    <a href="">Online fashion store - Homepage</a>
+                    <br>
+                    <img src="assets/reebok_web.png" alt="reebok_web">
+                    <br>
+                    <a href="">Reebok Store - Concept</a>
+                    <br>
+                    <img src="assets/braun.png" alt="cam">
+                    <br>
+                    <a href="">Braun Landing Page - Concept</a>
+                </div>
+                
+            </main>
+
             <a name="contacts"></a>
-            <div class="contacts">
-                <h2>Contacts</h2>
-                <p> Want to know more or just chat?
-                    <br> 
-                    You are welcome!
-                </p>
+            <footer class="footer">
+                <div class="contacts">
+                    <p>Contacts</p>
+                    <p> Want to know more or just chat?
+                        <br> 
+                        You are welcome!
+                    </p>
+                    <input class="btn" type="submit" value="Send massage">
+                </div>
 
-                <input class="btn" type="submit" value="Send massage">
                 <div class="icon">
-                    <a href=""><img src="Vector.png" alt="instagram"></a>
-                    <a href=""><img src="Vector (3).png" alt="ne instagram"></a>
+                    <div class="vector">
+                        <a href=""><img src="assets/instagrm.png" alt="instagram"></a>
+                        <a href=""><img src="assets/vk.png" alt="ne instagram"></a>
+                        <a href=""><img src="assets/instagrm.png" alt="instagram"></a>
+                        <a href=""><img src="assets/vk.png" alt="ne instagram"></a>
+                    </div>
                     <p> Like me on
                         <br>
                         LinkedIn, Instagram, Behance, Dribble
                     </p>
                 </div>
-            </div>
-        </footer>
+                
+            </footer>
     </body>
 </html>

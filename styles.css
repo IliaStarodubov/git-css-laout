@@ -1,0 +1,307 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font: normal 16px 'Gilroy';
+    background: #ffffff;
+    max-width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.conteiner {
+    margin: auto 15%;
+}
+
+
+#menu__toggle {            /* скрыть бургер на full-screen*/
+    visibility: hidden;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #828282;
+}
+
+.menu a:hover {
+    color: black;
+}
+
+/* poloska */
+
+.line {
+    border: 1px solid #828282;
+}
+
+.ava {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+    max-width: auto;
+    max-height: auto;
+}
+
+.mini-photo {
+    display: none;
+}
+
+/* main-text */
+
+.main-text {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-end;          /* спросить можно ли сделать через flex-and */
+    margin: 20px 0;
+}
+
+.main-text__name {
+    font-size: 47px;       
+    line-height: 59px;
+    flex: 1 1 0;
+    text-align: left;
+}
+
+.main-text__lange {
+    writing-mode: vertical-rl;
+    flex: 1 1 0;
+}
+
+
+/* ABOUT ME */
+
+.about {
+    background-color: #F6F6F6;
+    padding: 80px 0 40px 0;    
+    margin-top: 50px;
+
+}   
+
+.about h2 {
+    display: block;
+    font-size: 34px;
+}
+
+.about p {                           
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+/* skills */
+
+.skills h2 {
+    font-size: 34px;
+}
+
+.skills p {
+    min-height: 50px;
+}
+
+.skills-list {   
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-list p {
+    color: #828282;
+    font-size: 14px;
+}
+
+/* portfolio */
+
+.portfolio {
+    background-color: #F6F6F6;
+}
+
+.portfolio h2 {
+    font-size: 34px;
+    padding-top: 80px;
+}
+
+.portfolio a {
+    display: block;
+    color: black;
+    padding: 30px 0 60px;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10vh;
+}
+
+.footer p:nth-child(1) {
+    font-size: 34px;
+}
+
+.contacts {
+    margin: 0;
+}
+
+.btn {
+    background: #111;
+    padding: 10px 35px;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+/* иконки ссылок */
+
+.vector {
+    display: flex;
+    justify-content: space-around;
+    min-width: 400px;
+    margin-bottom: 30px;
+}
+
+.icon a:hover {
+    opacity: 0.5;
+}
+
+.icon p {
+    color: #828282;
+    font-size: 13px;
+}
+
+@media (max-width: 414px) {
+
+    /* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+  }
+  
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: absolute;    /* fixed будет двигаться за тобой */
+    top: 50px;
+    right: 30px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute; 
+    width: 100%;
+    height: 3px;
+    background-color: black;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+
+  /* контейнер меню */
+.menu {
+    display: block;
+    position: absolute; /* fixed будет двигаться за тобой */
+    visibility: hidden;
+    top: 0;
+    /* left: -100%; */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    font-size: 34px;
+    background-color: white;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+#menu__toggle:checked ~ .menu {
+    visibility: visible;
+    left: 0;
+  }
+
+body {
+    max-width: 100%;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    }
+
+.conteiner {
+    margin: 0;
+}
+
+.line {
+    display: none;
+    }
+
+.main-text {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    }
+
+.main-text__lange {
+    display: none;
+    }
+
+.mini-photo {
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    }
+
+.avatar {
+    display: none;
+    }
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    }
+
+.portfolio > img {
+    width: 370px;
+    height: 230px;
+    }   
+}
+
