@@ -140,8 +140,8 @@ body {
     flex-direction: column;
     /* justify-content: space-between; */
     align-items: center;
-    flex-wrap: wrap;
-    gap: 10vh;
+    /* flex-wrap: wrap; */
+    /* gap: 10vh; */
 }
 
 .footer p:nth-child(1) {
@@ -150,6 +150,7 @@ body {
 
 .contacts {
     margin: 0;
+    flex: 0 0 300px;
 }
 
 .btn {
